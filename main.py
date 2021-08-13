@@ -28,6 +28,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_Dialog):
                         self.progressBar.setProperty("value",e)
                     print (key, ":", lista[key])
                     msg=container(key)
+                    
                     dest=lista[key]
                     correoContainer(correoEmisor,passEmisor,msg,dest)
                 self.label_3.setVisible(True)
